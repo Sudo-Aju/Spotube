@@ -1,6 +1,8 @@
 # SPOTUBE
 
 SPOTUBE is a compact, DIY desktop media station designed to provide a tactile and visual interface for your favorite streaming services (I MOSTLY USE SPOTIFY so ill use for that 😁).
+<img width="1415" height="1321" alt="Screenshot 2026-03-19 at 23 48 43" src="https://github.com/user-attachments/assets/be9196ed-3878-4711-a151-355ebeb05ba1" />
+
 
 ## What does the project do?
 The SPOTUBE device acts as a dedicated hardware controller and display for media playback. By leveraging the ESP32-C3's Wi-Fi capabilities, it communicates with APIs (like Spotify or YouTube) to:
