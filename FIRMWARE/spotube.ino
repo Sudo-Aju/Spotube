@@ -27,10 +27,10 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RS
 void setup() {
     Serial.begin(115200);
 
-    tft.initR(INITR_BLACKTAB); // the type of screen
-    tft.setRotation(1); // this makes the screen landscape! remove this line for portrait
+    tft.initR(INITR_BLACKTAB); 
+    tft.setRotation(1); 
     Serial.println("TFT Initialized!");
-    tft.fillScreen(ST77XX_BLACK); // make sure there is nothing in the buffer
+    tft.fillScreen(ST77XX_BLACK); 
 
     WiFi.begin(SSID, PASSWORD);
     Serial.print("Connecting to WiFi...");
@@ -41,8 +41,8 @@ void setup() {
     }
     Serial.printf("\nConnected!\n");
 
-    tft.setCursor(0,0); // make the cursor at the top left
-    tft.write(WiFi.localIP().toString().c_str()); // print out IP on the screen
+    tft.setCursor(0,0); 
+    tft.write(WiFi.localIP().toString().c_str()); 
 
     sp.begin();
     while(!sp.is_auth()){
