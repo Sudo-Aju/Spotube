@@ -13,7 +13,7 @@ a physical spotify controller
 
 ### *a dedicated physical interface for controlling spotify.*
 
-<img src="./media/render1.png" width="85%">
+<img src="./media/Render1.png" width="85%">
 
 </div>
 
@@ -31,9 +31,9 @@ it provides physical controls for spotify playback while displaying the current 
 
 <div align="center">
 
-<img src="./media/render1.png" width="90%">
-<img src="./media/render2.png" width="90%">
-<img src="./media/render3.png" width="90%">
+<img src="./media/Render1.png" width="90%">
+<img src="./media/Render2.png" width="90%">
+<img src="./media/Render3.png" width="90%">
 
 </div>
 
