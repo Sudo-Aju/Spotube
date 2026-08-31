@@ -53,7 +53,7 @@ it provides physical controls for spotify playback while displaying the current 
 
 ---
 
-# hardware stack
+# Hardware stack
 
 | component    | description             |
 | ------------ | ----------------------- |
@@ -131,7 +131,7 @@ then upload the firmware to the esp32-s3.
 
 # PCB
 
-designed in **kicad**.
+designed in **KiCad**.
 
 ```bash
 PCB/
@@ -140,6 +140,14 @@ PCB/
 ├── Spotube.kicad_pro
 └── Spotube.kicad_prl
 ```
+
+<div align="center">
+
+<img src="./Media/PCB.png" width="90%">
+<img src="./Media/Schematic.png" width="90%">
+
+</div>
+
 
 ---
 

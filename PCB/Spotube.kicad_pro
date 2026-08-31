@@ -526,7 +526,7 @@
       "netlist": "",
       "plot": "GERBER/",
       "specctra_dsn": "",
-      "step": "Spotube.step",
+      "step": "Spotube.pdf",
       "vrml": ""
     },
     "page_layout_descr_file": ""
