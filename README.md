@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img src="./media/logo.png" alt="spotube logo" width="100%" />
+# <img src="./Media/logo.png" alt="spotube logo" width="100%" />
 
 a physical spotify controller
 
