@@ -19,7 +19,7 @@ a physical spotify controller
 
 ---
 
-# overview
+# Overview
 
 **spotube** is a compact physical spotify controller built around an **esp32-s3**, 1.5" lcd, mechanical switches, and a rotary encoder.
 
@@ -27,7 +27,7 @@ it provides physical controls for spotify playback while displaying the current 
 
 ---
 
-# gallery
+# Gallery
 
 <div align="center">
 
@@ -39,7 +39,7 @@ it provides physical controls for spotify playback while displaying the current 
 
 ---
 
-# features
+# Features
 
 * spotify integration
 * esp32-s3
@@ -67,7 +67,7 @@ it provides physical controls for spotify playback while displaying the current 
 
 ---
 
-# assembly
+# Assembly
 
 ## 1. order the pcb
 
@@ -84,7 +84,7 @@ and send them to your preferred manufacturer.
 all components are listed in:
 
 ```bash
-BOM(6).csv
+BOM.csv
 ```
 
 ## 3. assemble
@@ -129,7 +129,7 @@ then upload the firmware to the esp32-s3.
 
 ---
 
-# pcb
+# PCB
 
 designed in **kicad**.
 
@@ -143,7 +143,7 @@ PCB/
 
 ---
 
-# enclosure
+# Enclosure
 
 the complete assembly is available as:
 
@@ -151,44 +151,59 @@ the complete assembly is available as:
 Assembly.step
 ```
 
+and the stl files for enclosures is available as:
+
+```bash
+Bottom.stl
+Upper.stl
+Rod.stl
+```
+
 designed around the custom pcb and components.
 
 ---
 
-# bom
+# BOM
 
-a
+|Name                                                                                   |Purpose        |Cost Per Item (USD)|Quantity|Total (USD)|Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |Distributor|
+|---------------------------------------------------------------------------------------|---------------|-------------------|--------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+|3D print model                                                                         |Shell          |5.0                |1       |5.0        |https://github.com/hackclub/print-legion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |Hack Club  |
+|Cherry MX Keycaps                                                                      |Keycaps        |6.0                |1       |6.0        |https://www.amazon.in/STYLEHEAVEN-Transparent-Keycaps-Cherry-Switches/dp/B0GFP1XJ9Z/ref=sr_1_3?crid=DYB9DOR1TQBR&dib=eyJ2IjoiMSJ9.kKc3HdH17AhE-nTQrQ1SxfVaJhYmeFbPm0835eVz_-jbeImT-htLy8qY5z9y7LFMVcU5GMdK1seMkgmHiR4wWpi1BgtYqCacbU8EvAMouMm7CIndQuxGhQM03HZ5q1YC1rxEzez9aDCuzcTNcX6JDWGt8_kTfs1JOH-BJ0gKga4v_X3wMwq5lh2IEx95DAljB56USbKK-cMQQL0NlOBpbdPy96U8AAuc-0rmg1aAkgo.8iI3E4B-61cjV9iN_8wTP24XBDafzPccAuC3eiihFm8&dib_tag=se&keywords=cherry+mx+keycaps&nsdOptOutParam=true&qid=1773942374&sprefix=cherry+mx+keyca%2Caps%2C375&sr=8-3                                 |Amazon     |
+|Cherry MX Switches                                                                     |Switches       |4.0                |1       |4.0        |https://neomacro.in/products/cherry-mx-switches?srsltid=AfmBOopQB-NQ1BO0dVkkvkxVeaQVPTGoN2zvkJHoIvh3QNb6hdRFlXtS                                                                                                                                                                                                                                                                                                                                                                                                                                                              |Neo Macro  |
+|M3X4 mm Brass Heat Set Threaded Round Insert Nut - Pack of 6                           |Heatset Inserts|1.0                |1       |1.0        |https://www.amazon.in/M3X4-Brass-Threaded-Round-Insert/dp/B0B9NL8F74/ref=sr_1_6?crid=4XHSG7DE82FX&dib=eyJ2IjoiMSJ9.jSf9pEXSTtLSBrCZPvV8rjy5sJiwLvEN3PXR5QozJPsAiY0a3zu6d2eMFlCtvwc3lazSN3qwL78W-59c-F2lxC8eSm_g7yI2pQcVhqhLF0ZTlcaxr_mBZh80dUTecpa2n2oi8dVloWKQzb8cnK1K6XzuL9LXztnVKEaTjiPcTQCJJVEKcjAfRsyneHSKDAbe3HTdYqj45szwxJxZ59RBY0f4fnIMMKMSxA-nZUmDnciH63nYQ_eTNyiBXuaOVkBy9CxHedxJKnfBrpx4WTrILm3y449EAYZIIWevf4pucFc.ck8xHBHMe4U-TGfCyeApORo9GM7ryFF2eu3gQ-_vovg&dib_tag=se&keywords=M3+Heatset+inserts&qid=1773942041&sprefix=m3+heatset+inserts%2Caps%2C364&sr=8-6|Amazon     |
+|Waveshare 1.5inch LCD Module (240×280 IPS)                                             |Screen         |9.49               |1       |9.49       |https://www.waveshare.com/1.5inch-lcd-module.htm                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |Waveshare  |
+|Waveshare ESP32-S3 Mini Development Board based on ESP32-S3FH4R2 4MB Flash & 2MB PS RAM|Dev Board      |6.82               |1       |6.82       |https://robu.in/product/waveshare-esp32-s3-mini-development-board-based-on-esp32-s3fh4r2-4mb-flash-and-2mb-ps-ram-without-headers-and-adapter-board-fpc-cable/                                                                                                                                                                                                                                                                                                                                                                                                                |Robu.in    |
+|EC11 Rotary Encoder Module with Knob Cap                                               |Rotary Input   |0.98               |1       |0.98       |https://robu.in/product/EC11%20Rotary%20Encoder%20Module%20with%20Knob%20Cap%20for%20Development%20Boards/                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |Robu.in    |
 
 ---
 
-# repository
+# Repository
 
 ```text
 Spotube/
 ├── PCB/
 ├── CAD/
-├── media/
-├── spotube.ino
-├── BOM(6).csv
+├── Media/
+├── Firmware/spotube.ino
+├── BOM.csv
 └── README.md
 ```
 
 ---
 
-# current status
+# Current status
 
 * [x] concept
 * [x] pcb
 * [x] schematic
 * [x] enclosure
 * [x] firmware
-* [x] display
 * [ ] final build
 * [ ] complete spotify controls
 
 ---
 
-# contributing
+# Contributing
 
 contributions and suggestions are welcome.
 
@@ -201,11 +216,11 @@ fork → modify → commit → pull request
 
 ---
 
-# creator
+# Creator
 
-### azmeer pirani
+### Azmeer Pirani
 
-17 • india • @fallout
+17 • India • @macondo
 
 built with a love for:
 
@@ -217,15 +232,15 @@ built with a love for:
 
 ---
 
-# license
+# License
 
-this project is licensed under the **mit license**.
+This project is licensed under the **MIT license**.
 
 ---
 
 <div align="center">
 
-# spotube
+# Spotube
 
 ### *your music. your controls.*
 
