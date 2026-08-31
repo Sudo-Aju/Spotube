@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "GERBER/",
       "specctra_dsn": "",
       "step": "Spotube.step",
       "vrml": ""
