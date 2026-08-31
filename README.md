@@ -1,30 +1,232 @@
-# SPOTUBE
+<div align="center">
 
-SPOTUBE is a compact, DIY desktop media station designed to provide a tactile and visual interface for your favorite streaming services (I MOSTLY USE SPOTIFY so ill use for that 😁).
-<img width="1415" height="1321" alt="Screenshot 2026-03-19 at 23 48 43" src="https://github.com/user-attachments/assets/be9196ed-3878-4711-a151-355ebeb05ba1" />
+# <img src="./media/logo.png" alt="spotube logo" width="100%" />
 
+a physical spotify controller
 
-## What does the project do?
-The SPOTUBE device acts as a dedicated hardware controller and display for media playback. By leveraging the ESP32-C3's Wi-Fi capabilities, it communicates with APIs (like Spotify or YouTube) to:
-* **Display Real-time Data:** Show current song titles, artists, and album art on the 1.8" TFT screen.
-* **Tactile Control:** Use mechanical Cherry MX switches to play/pause, skip tracks, or toggle playlists.
-* **Portable Design:** Housed in a custom 3D-printed shell, it sits perfectly on a desk as a functional piece of tech art.
+<p>
+<img src="https://img.shields.io/badge/status-in%20development-8A2BE2?style=for-the-badge">
+<img src="https://img.shields.io/badge/open%20source-yes-00C853?style=for-the-badge">
+<img src="https://img.shields.io/badge/powered%20by-esp32--s3-1E88E5?style=for-the-badge">
+<img src="https://img.shields.io/badge/display-1.5%22%20ips-FF6D00?style=for-the-badge">
+</p>
 
-## Bill of Materials
-| Name                                                         | Purpose         | Cost Per Item (USD) | Quantity | Total (USD) | Link | Distributor        |
-|:-------------------------------------------------------------|:----------------|--------------------:|---------:|------------:|:-----|:-------------------|
-| 3D print model                                               | Shell           |                   5 |        1 |           5 | [Link](https://github.com/hackclub/print-legion) | Hack Club          |
-| Cherry MX Keycaps                                            | Keycaps         |                   6 |        1 |           6 | [Link](https://www.amazon.in/STYLEHEAVEN-Transparent-Keycaps-Cherry-Switches/dp/B0GFP1XJ9Z/ref=sr_1_3?crid=DYB9DOR1TQBR&dib=eyJ2IjoiMSJ9.kKc3HdH17AhE-nTQrQ1SxfVaJhYmeFbPm0835eVz_-jbeImT-htLy8qY5z9y7LFMVcU5GMdK1seMkgmHiR4wWpi1BgtYqCacbU8EvAMouMm7CIndQuxGhQM03HZ5q1YC1rxEzez9aDCuzcTNcX6JDWGt8_kTfs1JOH-BJ0gKga4v_X3wMwq5lh2IEx95DAljB56USbKK-cMQQL0NlOBpbdPy96U8AAuc-0rmg1aAkgo.8iI3E4B-61cjV9iN_8wTP24XBDafzPccAuC3eiihFm8&dib_tag=se&keywords=cherry+mx+keycaps&nsdOptOutParam=true&qid=1773942374&sprefix=cherry+mx+keyca%2Caps%2C375&sr=8-3) | Amazon             |
-| Cherry MX Switches                                           | Switches        |                   4 |        1 |           4 | [Link](https://neomacro.in/products/cherry-mx-switches?srsltid=AfmBOopQB-NQ1BO0dVkkvkxVeaQVPTGoN2zvkJHoIvh3QNb6hdRFlXtS) | Neo Macro          |
-| M3X4 mm Brass Heat Set Threaded Round Insert Nut - Pack of 6 | Heatset Inserts |                   1 |        1 |           1 | [Link](https://www.amazon.in/M3X4-Brass-Threaded-Round-Insert/dp/B0B9NL8F74/ref=sr_1_6?crid=4XHSG7DE82FX&dib=eyJ2IjoiMSJ9.jSf9pEXSTtLSBrCZPvV8rjy5sJiwLvEN3PXR5QozJPsAiY0a3zu6d2eMFlCtvwc3lazSN3qwL78W-59c-F2lxC8eSm_g7yI2pQcVhqhLF0ZTlcaxr_mBZh80dUTecpa2n2oi8dVloWKQzb8cnK1K6XzuL9LXztnVKEaTjiPcTQCJJVEKcjAfRsyneHSKDAbe3HTdYqj45szwxJxZ59RBY0f4fnIMMKMSxA-nZUmDnciH63nYQ_eTNyiBXuaOVkBy9CxHedxJKnfBrpx4WTrILm3y449EAYZIIWevf4pucFc.ck8xHBHMe4U-TGfCyeApORo9GM7ryFF2eu3gQ-_vovg&dib_tag=se&keywords=M3+Heatset+inserts&qid=1773942041&sprefix=m3+heatset+inserts%2Caps%2C364&sr=8-6) | Amazon             |
-| 1.8 inch SPI 128×160 TFT LCD Display Module                  | Screen          |                   6 |        1 |           6 | [Link](https://sharvielectronics.com/product/1-8-inch-spi-128x160-tft-lcd-display-module/?srsltid=AfmBOoqvsdgEor-hkL68La2pkhxe0j9GbAir5gN_4rwcEZz7Ym8qhYRu) | Sharvi Electronics |
-| ESP32-C3 Mini                                                | Dev Board       |                   6 |        1 |           6 | [Link](https://www.amazon.in/OceanLabz-ESP32-C3-Super-Development-Bluetooth/dp/B0D2DM322M?s=bazaar&th=1) | Amazon             |
+### *a dedicated physical interface for controlling spotify.*
 
-**Total Project Cost: $28.00**
+<img src="./media/render1.png" width="85%">
 
-## Components Overview
-- **Shell**: 3D printed model.
-- **Input**: Cherry MX Switches and Keycaps.
-- **Assembly**: M3 Heatset Inserts.
-- **Display**: 1.8 inch SPI TFT LCD.
-- **Controller**: ESP32-C3 Mini.
+</div>
+
+---
+
+# overview
+
+**spotube** is a compact physical spotify controller built around an **esp32-s3**, 1.5" lcd, mechanical switches, and a rotary encoder.
+
+it provides physical controls for spotify playback while displaying the current track.
+
+---
+
+# gallery
+
+<div align="center">
+
+<img src="./media/render1.png" width="90%">
+<img src="./media/render2.png" width="90%">
+<img src="./media/render3.png" width="90%">
+
+</div>
+
+---
+
+# features
+
+* spotify integration
+* esp32-s3
+* 1.5" ips display
+* cherry mx switches
+* ec11 rotary encoder
+* wi-fi
+* custom pcb
+* custom enclosure
+* physical playback controls
+
+---
+
+# hardware stack
+
+| component    | description             |
+| ------------ | ----------------------- |
+| mcu          | waveshare esp32-s3 mini |
+| display      | waveshare 1.5" ips lcd  |
+| switches     | cherry mx               |
+| encoder      | ec11                    |
+| connectivity | wi-fi                   |
+| pcb          | custom kiCad design     |
+| case         | custom 3d printed       |
+
+---
+
+# assembly
+
+## 1. order the pcb
+
+generate gerbers from:
+
+```bash
+PCB/Spotube.kicad_pcb
+```
+
+and send them to your preferred manufacturer.
+
+## 2. order components
+
+all components are listed in:
+
+```bash
+BOM(6).csv
+```
+
+## 3. assemble
+
+* solder the switches
+* solder the ec11 encoder
+* install the esp32-s3
+* connect the display
+* assemble the enclosure
+* install the keycaps
+
+---
+
+# firmware
+
+firmware is located in:
+
+```bash
+spotube.ino
+```
+
+the firmware handles:
+
+* wi-fi
+* spotify api
+* display
+* buttons
+* rotary encoder
+
+## setup
+
+configure your:
+
+```cpp
+wifi ssid
+wifi password
+spotify client id
+spotify client secret
+```
+
+then upload the firmware to the esp32-s3.
+
+---
+
+# pcb
+
+designed in **kicad**.
+
+```bash
+PCB/
+├── Spotube.kicad_pcb
+├── Spotube.kicad_sch
+├── Spotube.kicad_pro
+└── Spotube.kicad_prl
+```
+
+---
+
+# enclosure
+
+the complete assembly is available as:
+
+```bash
+Assembly.step
+```
+
+designed around the custom pcb and components.
+
+---
+
+# bom
+
+a
+
+---
+
+# repository
+
+```text
+Spotube/
+├── PCB/
+├── CAD/
+├── media/
+├── spotube.ino
+├── BOM(6).csv
+└── README.md
+```
+
+---
+
+# current status
+
+* [x] concept
+* [x] pcb
+* [x] schematic
+* [x] enclosure
+* [x] firmware
+* [x] display
+* [ ] final build
+* [ ] complete spotify controls
+
+---
+
+# contributing
+
+contributions and suggestions are welcome.
+
+```bash
+git clone https://github.com/Sudo-Aju/Spotube.git
+cd Spotube
+```
+
+fork → modify → commit → pull request
+
+---
+
+# creator
+
+### azmeer pirani
+
+17 • india • @fallout
+
+built with a love for:
+
+* hardware
+* pcb design
+* music
+* embedded systems
+* experimental products
+
+---
+
+# license
+
+this project is licensed under the **mit license**.
+
+---
+
+<div align="center">
+
+# spotube
+
+### *your music. your controls.*
+
+</div>
